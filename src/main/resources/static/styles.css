@@ -1,0 +1,24 @@
+body
+{
+    background-image: url("/pexels-ella-olsson-1640770.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main-content
+{
+    background-color: #77ACA2;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn
+{
+    background-color: #77ACA2;
+    color: white;
+}
+
+.card-header
+{
+    color:black;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nutrition Magic</title>
+
+        <link href="/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous">
+    </head>
+    <body>
+    <!-- Main Content -->
+    <div class="container mt-3 pb-3 mb-3" id="main-content">
+
+        <h1 class="text-center pt-5"> Nutrition Magic App</h1>
+        <div class="container">
+            <h5 class="text-center">Welcome to the nutrition app, this application
+                can calculate the amount of calories you've eaten based on the input given using
+                the Nutritionix api. You are also able to look up food through Nutritionix's food database and exercise
+                information. </h5>
+            <h6 class="text-center mt-3">If no information is shown the query inputted is incorrectly entered. </h6>
+        </div>
+
+        <div class="row align-items-start mt-5">
+            <!-- What Did You Eat Column-->
+            <div class="col">
+                <form>
+                    <p class="text-center"> Look up nutritional information for what you will/did eat!</p>
+                    <div class="d-flex justify-content-center">
+                        <input  class= "form-control" type="text" id="nutrition" placeholder="I ate 1 egg...">
+                        <button class="btn btn-dark" id="eatenFood">Search</button>
+                    </div>
+                </form>
+                <div id="specificFood" class="card mt-3">
+
+                </div>
+                <!-- Exercise Section-->
+                <div class="col mt-3">
+                    <form>
+                        <p class="text-center"> Look up the information for the exercises you did!</p>
+                        <div class="d-flex justify-content-center">
+                            <input  class= "form-control" type="text" id="exercise" placeholder="I ran for 2 hours">
+                            <button class="btn btn-dark" id="exerciseDone">Search</button>
+                        </div>
+                    </form>
+                    <div id="exerciseStats" class="card mt-3">
+                    </div>
+                </div>
+            </div>
+            <!-- Look up foods column-->
+            <div class="col">
+                <form>
+                    <p class="text-center"> Look up foods</p>
+                    <div class="d-flex justify-content-center">
+                        <input class="form-control" type="text" id="foodSearch" placeholder="Search for foods">
+                        <button class="btn btn-dark" id="searchingFood">Search</button>
+                    </div>
+                    <div class="suggestions">
+                        <ul></ul>
+                    </div>
+                </form>
+                <div id="foodList">
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script src="/script.js"></script>
+</html>
